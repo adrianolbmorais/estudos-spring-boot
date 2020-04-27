@@ -1,0 +1,6 @@
+br\com\psytecnology\domain\entity\PedidoBuilder.class
+br\com\psytecnology\domain\entity\ItemPedidoBuilder.class
+br\com\psytecnology\domain\entity\PedidoDTOBuilder.class
+br\com\psytecnology\service\impl\PedidosServiceTest.class
+br\com\psytecnology\domain\entity\ClienteBuilder.class
+br\com\psytecnology\domain\entity\ItensPedidoDTOBuilder.class
