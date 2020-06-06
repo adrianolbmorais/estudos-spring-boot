@@ -1,0 +1,408 @@
+@startuml
+
+title __PROJETO-VENDAS's Class Diagram__\n
+
+  namespace br.com.psytecnology {
+    class br.com.psytecnology.VendasApplication {
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace config {
+      class br.com.psytecnology.config.InternacionalizacaoConfig {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace config {
+      class br.com.psytecnology.config.SecurityConfig {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace config {
+      class br.com.psytecnology.config.SwaggerConfig {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      class br.com.psytecnology.domain.entity.Cliente {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      class br.com.psytecnology.domain.entity.ItemPedido {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      class br.com.psytecnology.domain.entity.Pedido {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      class br.com.psytecnology.domain.entity.Produto {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      class br.com.psytecnology.domain.entity.Usuario {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.CredenciaisDTO {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.InformacoesItemPedidoDTO {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.InformacoesPedidoDTO {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.ItensPedidoDTO {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.MapperDtoToEntity {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.PedidoDTO {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.StatusPedidoDTO {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.TokenDTO {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.enums {
+      enum StatusPedido {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.repository {
+      interface br.com.psytecnology.domain.repository.ClientesRepository {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.repository {
+      interface br.com.psytecnology.domain.repository.ItemPedidoRepository {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.repository {
+      class br.com.psytecnology.domain.repository.JdbcClienteRepository {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.repository {
+      class br.com.psytecnology.domain.repository.JpaClienteRepository {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.repository {
+      interface br.com.psytecnology.domain.repository.JpaRepositoriesClienteRepository {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.repository {
+      interface br.com.psytecnology.domain.repository.PedidosRepository {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.repository {
+      interface br.com.psytecnology.domain.repository.ProdutosRepository {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.repository {
+      interface br.com.psytecnology.domain.repository.UsuarioRepository {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace exceptions {
+      class br.com.psytecnology.exceptions.PedidoNaoEncontradoException {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace exceptions {
+      class br.com.psytecnology.exceptions.RegraNegocioException {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace exceptions {
+      class br.com.psytecnology.exceptions.SenhaInvalidaException {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace rest.controller {
+      class br.com.psytecnology.rest.controller.ClienteController {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace rest.controller {
+      class br.com.psytecnology.rest.controller.PedidosController {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace rest.controller {
+      class br.com.psytecnology.rest.controller.ProdutosController {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace rest.controller {
+      class br.com.psytecnology.rest.controller.UsuarioController {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace rest.controller {
+      namespace exceptions {
+        class br.com.psytecnology.rest.controller.exceptions.ApiErrors {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace rest.controller {
+      namespace exceptions {
+        class br.com.psytecnology.rest.controller.exceptions.RestExceptionHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace security.jwt {
+      class br.com.psytecnology.security.jwt.JwtAuthFilter {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace security.jwt {
+      class br.com.psytecnology.security.jwt.JwtService {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace service {
+      interface br.com.psytecnology.service.PedidosService {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace service {
+      interface br.com.psytecnology.service.UsuarioService {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace service {
+      namespace impl {
+        class br.com.psytecnology.service.impl.PedidosServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace service {
+      namespace impl {
+        class br.com.psytecnology.service.impl.UsuarioServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace validation {
+      interface br.com.psytecnology.validation.NotEmptyList {
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace validation {
+      namespace constraintValidation {
+        class br.com.psytecnology.validation.constraintValidation.NotEmptyListValidator {
+        }
+      }
+    }
+  }
+  
+
+  br.com.psytecnology.VendasApplication -up-|> org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+  br.com.psytecnology.config.SecurityConfig -up-|> org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
+  br.com.psytecnology.config.SecurityConfig o-- br.com.psytecnology.security.jwt.JwtService : jwtService
+  br.com.psytecnology.config.SecurityConfig o-- br.com.psytecnology.service.UsuarioService : usuarioService
+  br.com.psytecnology.domain.entity.ItemPedido o-- br.com.psytecnology.domain.entity.Pedido : pedido
+  br.com.psytecnology.domain.entity.ItemPedido o-- br.com.psytecnology.domain.entity.Produto : produto
+  br.com.psytecnology.domain.entity.Pedido o-- br.com.psytecnology.domain.entity.Cliente : cliente
+  br.com.psytecnology.domain.entity.Pedido o-- br.com.psytecnology.domain.enums.StatusPedido : status
+  br.com.psytecnology.domain.entity.dto.MapperDtoToEntity o-- br.com.psytecnology.domain.repository.ProdutosRepository : produtosRepository
+  br.com.psytecnology.rest.controller.ClienteController o-- br.com.psytecnology.domain.repository.ClientesRepository : clientesRepository
+  br.com.psytecnology.rest.controller.PedidosController o-- br.com.psytecnology.service.PedidosService : pedidosService
+  br.com.psytecnology.rest.controller.ProdutosController o-- br.com.psytecnology.domain.repository.ProdutosRepository : produtosRepository
+  br.com.psytecnology.rest.controller.UsuarioController o-- br.com.psytecnology.security.jwt.JwtService : jwtService
+  br.com.psytecnology.rest.controller.UsuarioController o-- br.com.psytecnology.service.UsuarioService : usuarioService
+  br.com.psytecnology.security.jwt.JwtAuthFilter -up-|> org.springframework.web.filter.OncePerRequestFilter
+  br.com.psytecnology.security.jwt.JwtAuthFilter o-- br.com.psytecnology.security.jwt.JwtService : jwtService
+  br.com.psytecnology.security.jwt.JwtAuthFilter o-- br.com.psytecnology.service.UsuarioService : usuarioService
+  br.com.psytecnology.service.impl.PedidosServiceImpl .up.|> br.com.psytecnology.service.PedidosService
+  br.com.psytecnology.service.impl.PedidosServiceImpl o-- br.com.psytecnology.domain.repository.ClientesRepository : clientesRepository
+  br.com.psytecnology.service.impl.PedidosServiceImpl o-- br.com.psytecnology.domain.repository.ItemPedidoRepository : itemPedidoRepository
+  br.com.psytecnology.service.impl.PedidosServiceImpl o-- br.com.psytecnology.domain.entity.dto.MapperDtoToEntity : mapperDtoToEntity
+  br.com.psytecnology.service.impl.PedidosServiceImpl o-- br.com.psytecnology.domain.repository.PedidosRepository : pedidosRepository
+  br.com.psytecnology.service.impl.PedidosServiceImpl o-- br.com.psytecnology.domain.repository.ProdutosRepository : produtosRepository
+  br.com.psytecnology.service.impl.UsuarioServiceImpl .up.|> br.com.psytecnology.service.UsuarioService
+  br.com.psytecnology.service.impl.UsuarioServiceImpl o-- br.com.psytecnology.domain.repository.UsuarioRepository : usuarioRepository
+  br.com.psytecnology.validation.constraintValidation.NotEmptyListValidator .up.|> javax.validation.ConstraintValidator
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

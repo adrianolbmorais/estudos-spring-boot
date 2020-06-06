@@ -1,0 +1,249 @@
+@startuml
+
+title __DTO's Class Diagram__\n
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.CredenciaisDTO {
+            - login : String
+            - senha : String
+            + CredenciaisDTO()
+            + equals()
+            + getLogin()
+            + getSenha()
+            + hashCode()
+            + setLogin()
+            + setSenha()
+            + toString()
+            # canEqual()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.InformacoesItemPedidoDTO {
+            - descricaoProduto : String
+            - precoUnitario : BigDecimal
+            - quantidade : Integer
+            + InformacoesItemPedidoDTO()
+            + InformacoesItemPedidoDTO()
+            {static} + builder()
+            + equals()
+            + getDescricaoProduto()
+            + getPrecoUnitario()
+            + getQuantidade()
+            + hashCode()
+            + setDescricaoProduto()
+            + setPrecoUnitario()
+            + setQuantidade()
+            + toString()
+            # canEqual()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.InformacoesItemPedidoDTO.InformacoesItemPedidoDTOBuilder {
+            - descricaoProduto : String
+            - precoUnitario : BigDecimal
+            - quantidade : Integer
+            + build()
+            + descricaoProduto()
+            + precoUnitario()
+            + quantidade()
+            + toString()
+            ~ InformacoesItemPedidoDTOBuilder()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.InformacoesPedidoDTO {
+            - codigo : Integer
+            - cpf : String
+            - dataPedido : String
+            - itens : List<InformacoesItemPedidoDTO>
+            - nomeCliente : String
+            - status : String
+            - total : BigDecimal
+            + InformacoesPedidoDTO()
+            + InformacoesPedidoDTO()
+            {static} + builder()
+            + equals()
+            + getCodigo()
+            + getCpf()
+            + getDataPedido()
+            + getItens()
+            + getNomeCliente()
+            + getStatus()
+            + getTotal()
+            + hashCode()
+            + setCodigo()
+            + setCpf()
+            + setDataPedido()
+            + setItens()
+            + setNomeCliente()
+            + setStatus()
+            + setTotal()
+            + toString()
+            # canEqual()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.InformacoesPedidoDTO.InformacoesPedidoDTOBuilder {
+            - codigo : Integer
+            - cpf : String
+            - dataPedido : String
+            - itens : List<InformacoesItemPedidoDTO>
+            - nomeCliente : String
+            - status : String
+            - total : BigDecimal
+            + build()
+            + codigo()
+            + cpf()
+            + dataPedido()
+            + itens()
+            + nomeCliente()
+            + status()
+            + toString()
+            + total()
+            ~ InformacoesPedidoDTOBuilder()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.ItensPedidoDTO {
+            - idProduto : Integer
+            - quantidade : Integer
+            + ItensPedidoDTO()
+            + ItensPedidoDTO()
+            + equals()
+            + getIdProduto()
+            + getQuantidade()
+            + hashCode()
+            + idProduto()
+            + quantidade()
+            + setIdProduto()
+            + setQuantidade()
+            + toString()
+            # canEqual()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.MapperDtoToEntity {
+            + MapperDtoToEntity()
+            + converterItensPedidoToDto()
+            + converterItensPedidosDTOtoEntity()
+            + converterPedidoToDto()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.PedidoDTO {
+            - idCliente : Integer
+            - itensPedidoDTO : List<ItensPedidoDTO>
+            - valorTotal : BigDecimal
+            + PedidoDTO()
+            + PedidoDTO()
+            + equals()
+            + getIdCliente()
+            + getItensPedidoDTO()
+            + getValorTotal()
+            + hashCode()
+            + idCliente()
+            + itensPedidoDTO()
+            + setIdCliente()
+            + setItensPedidoDTO()
+            + setValorTotal()
+            + toString()
+            + total()
+            # canEqual()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.StatusPedidoDTO {
+            - status : String
+            + getStatus()
+            + setStatus()
+        }
+      }
+    }
+  }
+  
+
+  namespace br.com.psytecnology {
+    namespace domain.entity {
+      namespace dto {
+        class br.com.psytecnology.domain.entity.dto.TokenDTO {
+            - login : String
+            - token : String
+            + TokenDTO()
+            + TokenDTO()
+            + equals()
+            + getLogin()
+            + getToken()
+            + hashCode()
+            + setLogin()
+            + setToken()
+            + toString()
+            # canEqual()
+        }
+      }
+    }
+  }
+  
+
+  br.com.psytecnology.domain.entity.dto.InformacoesItemPedidoDTO +-down- br.com.psytecnology.domain.entity.dto.InformacoesItemPedidoDTO.InformacoesItemPedidoDTOBuilder
+  br.com.psytecnology.domain.entity.dto.InformacoesPedidoDTO +-down- br.com.psytecnology.domain.entity.dto.InformacoesPedidoDTO.InformacoesPedidoDTOBuilder
+  br.com.psytecnology.domain.entity.dto.MapperDtoToEntity o-- br.com.psytecnology.domain.repository.ProdutosRepository : produtosRepository
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
